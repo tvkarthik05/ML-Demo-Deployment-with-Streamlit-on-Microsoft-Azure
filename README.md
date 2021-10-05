@@ -16,7 +16,7 @@ Demo app for deployment on Microsoft Azure using streamlit for different types o
 
 ## Steps for deployment on Azure
 1. Build docker image for backend. Go into the backend folder using powershell and run the below command
-	+ docker build --tag=<azure container registry name>/<image_name>:<tag_name> .
+	+ docker build --tag=<azure container registry name>/<image_name>:<tag_name> . <br>
 	e.g. - docker build --tag=acrpractice.azurecr.io/backend:v1.0 .
 	
 2. Run on local to test backend image
