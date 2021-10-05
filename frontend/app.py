@@ -3,8 +3,8 @@ import os
 import requests
 
 
-os.environ["USERNAME"] = 'demo'
-os.environ["PASSWORD"] = 'password'
+os.environ["USERNAME"] = ''
+os.environ["PASSWORD"] = ''
 url = 'http://localhost:80/'
 
 hide_streamlit_style = """
