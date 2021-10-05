@@ -23,15 +23,15 @@ Demo app for deployment on Microsoft Azure using streamlit for different types o
 	+ docker run -t -i -p 80:80 acrpractice.azurecr.io/backend:v1.0
 	
 3. Need to push the docker image to Azure Container Registry(ACR). Follow the below steps,
-	+ Login to azure - az login
-	+ Set subscription of acr - az account set --subscription <Subscription ID>
+	+ Login to azure - **az login**
+	+ Set subscription of acr - **az account set --subscription <Subscription ID>**
 	+ Login to acr - az acr login --name <ACR Login server>
-	+ Tag the app to the acr(optional) - docker tag acrpractice.azurecr.io/backend:v1.0 acrpracticetest.azurecr.io/backend:v1.0
-	+ Push to acr - docker push acrpractice.azurecr.io/backend:v1.0
+	+ Tag the app to the acr(optional) - **docker tag acrpractice.azurecr.io/backend:v1.0 acrpracticetest.azurecr.io/backend:v1.0**
+	+ Push to acr - **docker push acrpractice.azurecr.io/backend:v1.0**
 	
 4. Create an Azure Container Registry (ACI) and deploy the backend
 
 5. The IP address obtained from the above ACI can be added in frontend (Line-8 in app.py) 
 
 6. Run steps-1 to 4 for frontend as well and push the image to acr with name "frontend:v1.0"
-	+ docker push acrpractice.azurecr.io/frontend:v1.0
+	+ **docker push acrpractice.azurecr.io/frontend:v1.0**
