@@ -24,7 +24,7 @@ Demo app for deployment on Microsoft Azure using streamlit for different types o
 	
 3. Need to push the docker image to Azure Container Registry(ACR). Follow the below steps,
 	+ Login to azure - **az login**
-	+ Set subscription of acr - **az account set --subscription <Subscription ID>**
+	+ Set subscription of acr - **az account set --subscription <Subscription_ID>**
 	+ Login to acr - az acr login --name <ACR Login server>
 	+ Tag the app to the acr(optional) - **docker tag acrpractice.azurecr.io/backend:v1.0 acrpracticetest.azurecr.io/backend:v1.0**
 	+ Push to acr - **docker push acrpractice.azurecr.io/backend:v1.0**
